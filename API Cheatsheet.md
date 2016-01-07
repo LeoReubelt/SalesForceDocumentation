@@ -46,6 +46,6 @@ eg.  ["FirstName":"Lemmy", "LastName":"Kilmister"]
 eg.  ["FirstName":"Lemmy", "LastName":"Kilmister"]
   
 ##Request Refreshed Token 
-**URL** - https://login.salesforce.com//services/oauth2/token HTTP/1.1
+**URL** - https://login.salesforce.com//services/oauth2/token HTTP/1.1  
 **Methdod** - POST  
 **Parameters** - ["grant_type":"refresh_token", "client_id":*Client Id*, "client_secret":*Client Secret*, "refresh_token":*User Token*]
