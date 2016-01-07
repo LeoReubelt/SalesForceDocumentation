@@ -6,7 +6,7 @@
 ##Get Object List  
 **URL** - *\<Instance Url>*//services/data/v35.0/query  
 **Methdod** - GET  
-**Parameters** - q: SOQL String  
+**Parameters** - q: SOQL Query  
 
 ##Get Single Object 
 **URL** - *\<Instance Url>*/services/data/v35.0/sobjects/*\<objectName>*/*\<id>*   
@@ -56,20 +56,21 @@
 **Methdod** - POST  
 **Parameters** - None  
 **Header** - {"Content-Type":"application/xml", "charset":"UTF-8"}  
-**Body(XML)** -  
-\<?xml version="1.0" encoding="UTF-8"?>  
-\<jobInfo xmlns="http://www.force.com/2009/06/asyncapi/dataload">   
-\<operation>query\</operation>   
-\<object>*\<objectName>*\</object>  
-\<contentType>CSV\</contentType>   
+**Body** -  
+<pre><code>\<?xml version="1.0" encoding="UTF-8"?>
+\<jobInfo xmlns="http://www.force.com/2009/06/asyncapi/dataload">
+\<operation>query\</operation>
+\<object>*\<objectName>*\</object>
+\<contentType>CSV\</contentType>
 \</jobInfo>
+</code></pre>
   
 ##Create Query Batch
 **URL** - *\<Job Endpoint>*/*\<jobID>*/batch  
 **Methdod** - POST  
 **Parameters** - None  
 **Header** - {"Content-Type":"text/csv", "charset":"UTF-8"} 
-**Body(XML)** - SOQL String
+**Body** - SOQL Query
 
 
 ##Check All Batches Status
