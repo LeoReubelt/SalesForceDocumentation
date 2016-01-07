@@ -9,22 +9,22 @@
 **Parameters** - None  
 
 ##Get Single Object 
-**URL** - \\(*Instance Url*)/services/data/v35.0/sobjects/\\(*objectName*)/\\(*id*)
+**URL** - \\(*Instance Url*)/services/data/v35.0/sobjects/\\(*objectName*)/\\(*id*)  
 **Methdod** - GET  
 **Parameters** - None 
 
 ##Get Count 
-**URL** - \\(*Instance Url*)//services/data/v35.0/query?q=SELECT+count()+FROM+\\(*objectName*) 
+**URL** - \\(*Instance Url*)//services/data/v35.0/query?q=SELECT+count()+FROM+\\(*objectName*)   
 **Methdod** - GET  
 **Parameters** - None   
 
 ##Get API Limits 
-**URL** - \\(*Instance Url*)//services/data/v35.0/limits 
+**URL** - \\(*Instance Url*)//services/data/v35.0/limits   
 **Methdod** - GET  
 **Parameters** - None  
 
 ##Get Image Attachment 
-**URL** - \\(*Instance Url*)/services/data/v35.0/sobjects/Attachment/\(*id*)/Body
+**URL** - \\(*Instance Url*)/services/data/v35.0/sobjects/Attachment/\(*id*)/Body  
 **Methdod** - GET  
 **Parameters** - None  
 
@@ -40,8 +40,8 @@ eg.  ["FirstName":"Lemmy", "LastName":"Kilmister"]
 **Parameters** - ["Body":fileData, "ParentId":parentObjectID, "Name":fileName]
 
 ##Update Object 
-**URL** - \\(*Instance Url*)/services/data/v35.0/sobjects/\\(*objectName*)\\(*id*)
-**Methdod** - PATCH 
+**URL** - \\(*Instance Url*)/services/data/v35.0/sobjects/\\(*objectName*)\\(*id*)   
+**Methdod** - PATCH   
 **Parameters** - Fields as a dictionary  
 eg.  ["FirstName":"Lemmy", "LastName":"Kilmister"]
   
