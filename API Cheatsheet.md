@@ -63,7 +63,7 @@ eg.  ["FirstName":"Lemmy", "LastName":"Kilmister"]
 **Header** - ["X-SFDC-Session" : *token*, "Content-Type":"application/xml", "charset":"UTF-8"]  
 **Body(XML)** -  
  `<?xml version="1.0" encoding="UTF-8"?>`  
-`  <jobInfo xmlns="http://www.force.com/2009/06/asyncapi/dataload"> ` 
+`  <jobInfo xmlns="http://www.force.com/2009/06/asyncapi/dataload"> `   
 `  <operation>query</operation>`   
 `  <object>\(*objectName*)</object>`  
 `  <contentType>CSV</contentType> `   
